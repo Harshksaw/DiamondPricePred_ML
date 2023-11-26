@@ -1,10 +1,6 @@
-pandas 
-numpy 
+pandas
+numpy
 seaborn
-matplotlib
-sckit-learn
 flask
-
-
-
--e .
+scikit-learn
+#-e .
