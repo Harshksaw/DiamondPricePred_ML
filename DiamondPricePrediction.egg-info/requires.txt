@@ -1,6 +1,5 @@
 pandas
 numpy
 seaborn
-matplotlib
-sckit-learn
 flask
+scikit-learn

@@ -16,23 +16,21 @@ from src.logger import logging
 from src.utils import save_object
 
 
-
-##Data transformation
+## Data Transformation config
 
 @dataclass
-class DataTransformation:
-    preprocessor_ob_file_path = os.path.join('artifacts', 'preprocessor.pkl')
-    
-    
-    
-    
-class DataIngestion:
-    
-    def__init__(self):
-        self.data_transformation_config = DataTransformation()
-        
-    def get_data_transformation_object(self):
+class DataTransformationconfig:
+    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
 
+
+
+## Data Ingestionconfig class
+
+class DataTransformation:
+    def __init__(self):
+        self.data_transformation_config=DataTransformationconfig()
+
+    def get_data_transformation_object(self):
          
          try:
             logging.info('Data Transformation initiated')
@@ -137,4 +135,10 @@ class DataIngestion:
             logging.info("Exception occured in the initiate_datatransformation")
 
             raise CustomException(e,sys)
+
+
+    
+
+
+
 
